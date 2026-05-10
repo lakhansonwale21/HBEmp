@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-configuration PUBLIC  
+   "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+   "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">  
+
+<hibernate-configuration>  
+   <session-factory>  
+      <property name="hibernate.hbm2ddl.auto">update</property>  
+      <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>  
+      <property name="hibernate.show_sql">true</property>
+      <property name="connection.url">jdbc:mysql://localhost:3306/db?createDatabaseIfNotExists=true</property>  
+      <property name="connection.username">root</property>  
+      <property name="connection.password">Root</property>  
+      <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>  
+      <mapping class="com.tka.may_07.hbapp"/>  
+      <mapping class="com.tka.may_07.Employee"/> 
+      <mapping class="com.tka.may_07.stuhb"/>  
+      <mapping class="com.tka.may_07.Student"/>  
+   </session-factory>  
+</hibernate-configuration>
