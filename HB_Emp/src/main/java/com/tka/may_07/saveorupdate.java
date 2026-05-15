@@ -15,7 +15,7 @@ public class saveorupdate {
 		Session session = factory.openSession();
 		Transaction tx =  session.beginTransaction();
 		
-		Employee emp= new Employee(101, "rajveer", "tester", 58000.00);
+		Employee emp= new Employee(5, "pratik", "tester", 400000.00);
 		session.saveOrUpdate(emp);
 		
 		System.out.println("updated record");

@@ -1,12 +1,8 @@
 package com.tka.may_07;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
 public class Student {
 
-	@Id
+
 	int Stuid;
 	String name;
 	String address;

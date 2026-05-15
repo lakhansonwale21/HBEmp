@@ -1,7 +1,7 @@
 package com.tka.may_07;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Employee {
@@ -12,7 +12,13 @@ public class Employee {
 	String role;
 	double salary;
 	
-	
+	@Override
+	public String toString() {
+	    return "Employee [id=" + empid +
+	           ", name=" + name +
+	           ", role=" + role +
+	           ", salary=" + salary + "]";
+	}
 	
 	public Employee() {
 		// TODO Auto-generated constructor stub
@@ -56,6 +62,8 @@ public class Employee {
 		this.name = name;
 		this.role = role;
 		this.salary = salary;
+		
+		
 	}
 	
 	
